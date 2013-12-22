@@ -1,0 +1,95 @@
+object prx: Tprx
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Memoria Proteccion'
+  ClientHeight = 93
+  ClientWidth = 409
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object sLabel1: TsLabel
+    Left = 223
+    Top = 16
+    Width = 43
+    Height = 13
+    Caption = 'Direccion'
+    ParentFont = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+  end
+  object sRadioButton1: TsRadioButton
+    Left = 8
+    Top = 8
+    Width = 166
+    Height = 19
+    Caption = 'PAGE_EXECUTE_READWRITE'
+    Checked = True
+    TabOrder = 0
+    TabStop = True
+    SkinData.SkinSection = 'RADIOBUTTON'
+  end
+  object sRadioButton2: TsRadioButton
+    Left = 8
+    Top = 60
+    Width = 110
+    Height = 19
+    Caption = 'PAGE_NOACCESS'
+    TabOrder = 1
+    SkinData.SkinSection = 'RADIOBUTTON'
+  end
+  object sRadioButton3: TsRadioButton
+    Left = 8
+    Top = 34
+    Width = 109
+    Height = 19
+    Caption = 'PAGE_READONLY'
+    TabOrder = 2
+    SkinData.SkinSection = 'RADIOBUTTON'
+  end
+  object sEdit1: TsEdit
+    Left = 272
+    Top = 8
+    Width = 121
+    Height = 21
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    Text = '00100000'
+    SkinData.SkinSection = 'EDIT'
+    BoundLabel.Indent = 0
+    BoundLabel.Font.Charset = DEFAULT_CHARSET
+    BoundLabel.Font.Color = clWindowText
+    BoundLabel.Font.Height = -11
+    BoundLabel.Font.Name = 'Tahoma'
+    BoundLabel.Font.Style = []
+    BoundLabel.Layout = sclLeft
+    BoundLabel.MaxWidth = 0
+    BoundLabel.UseSkinColor = True
+  end
+  object sButton1: TsButton
+    Left = 318
+    Top = 35
+    Width = 75
+    Height = 25
+    Caption = 'Ok'
+    TabOrder = 4
+    OnClick = sButton1Click
+    SkinData.SkinSection = 'BUTTON'
+  end
+end
